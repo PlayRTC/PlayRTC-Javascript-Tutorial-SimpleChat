@@ -84,8 +84,8 @@
 
     appCaller = new PlayRTC({
       projectKey: "aee5f87e-c376-4f7e-b470-5c4ba725186d",
-      localVideoTarget: "callerLocalVideo",
-      remoteVideoTarget: "callerRemoteVideo"
+      localMediaTarget: "callerLocalVideo",
+      remoteMediaTarget: "callerRemoteVideo"
     });
 
     appCaller.on('connectChannel', function(channelId) {
@@ -106,8 +106,8 @@
 
     appCallee = new PlayRTC({
       projectKey: "aee5f87e-c376-4f7e-b470-5c4ba725186d",
-      localVideoTarget: "calleeLocalVideo",
-      remoteVideoTarget: "calleeRemoteVideo"
+      localMediaTarget: "calleeLocalVideo",
+      remoteMediaTarget: "calleeRemoteVideo"
     });
 
     connectChannelButton.addEventListener('click', function(e) {
